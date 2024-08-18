@@ -1,4 +1,5 @@
 # _redirects
 
 # Redirect from pages.dev to custom domain
+https://bbztools.pages.dev tools.bbz662.com 301!
 https://bbztools.pages.dev/* tools.bbz662.com/:splat 301!

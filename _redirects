@@ -1,2 +1,5 @@
-# Redirect from pages.dev to custom domain
-/* https://tools.bbz662.com/:splat 301
+# Redirect from main pages.dev domain to custom domain
+https://bbztools.pages.dev/* https://tools.bbz662.com/:splat 301
+
+# Redirect from any subdomain of pages.dev to custom domain
+https://*.bbztools.pages.dev/* https://tools.bbz662.com/:splat 301

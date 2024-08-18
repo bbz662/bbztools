@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BBZ - Creative Technologist</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <style>
         body,
@@ -22,7 +23,16 @@
             margin: 0 auto;
             padding: 2rem;
         }
-
+        .logo {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            z-index: 10;
+        }
+        .logo img {
+            width: 100px; /* ロゴのサイズを調整してください */
+            height: auto;
+        }
         header {
             display: flex;
             justify-content: space-between;
@@ -117,7 +127,9 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">BBZ</div>
+            <div class="logo">
+                <img src="/assets/images/logo.webp" alt="BBZ Logo">
+            </div>
             <nav>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>

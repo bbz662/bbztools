@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBZ - Creative Technologist</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #0f0f0f;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00ffff;
+        }
+
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            opacity: 0;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0;
+        }
+
+        .cta {
+            background-color: #00ffff;
+            color: #0f0f0f;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            opacity: 0;
+        }
+
+        .cta:hover {
+            background-color: #ffffff;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .project {
+            background-color: #1a1a1a;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .project h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">BBZ</div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <h1>Creative Technology Redefined</h1>
+                <p class="subtitle">Pushing the boundaries of digital innovation</p>
+                <a href="#contact" class="cta">Let's Collaborate</a>
+            </section>
+            <section id="projects" class="projects">
+                <div class="project">
+                    <h3>AI-Powered Art Installation</h3>
+                    <p>An interactive experience blending machine learning and visual arts.</p>
+                </div>
+                <div class="project">
+                    <h3>Blockchain for Sustainability</h3>
+                    <p>Leveraging distributed ledger technology for environmental impact tracking.</p>
+                </div>
+                <div class="project">
+                    <h3>Immersive VR Education Platform</h3>
+                    <p>Revolutionizing remote learning through virtual reality environments.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        gsap.from("h1", { opacity: 0, y: 50, duration: 1, delay: 0.5 });
+        gsap.from(".subtitle", { opacity: 0, y: 50, duration: 1, delay: 0.7 });
+        gsap.from(".cta", { opacity: 0, y: 50, duration: 1, delay: 0.9 });
+        gsap.from(".project", { opacity: 0, y: 50, duration: 1, stagger: 0.2, delay: 1.1 });
+    </script>
+</body>
+
+</html>
